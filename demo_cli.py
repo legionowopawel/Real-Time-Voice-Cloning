@@ -1,3 +1,9 @@
+import numpy as np
+if not hasattr(np, 'complex'):
+    np.complex = complex
+if not hasattr(np, 'float'):
+    np.float = float
+
 import argparse
 import os
 from pathlib import Path
